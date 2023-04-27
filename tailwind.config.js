@@ -1,22 +1,29 @@
-
 /** @type {import('tailwindcss').Config} */
-
-const withMT = require("@material-tailwind/react/utils/withMT");
-
-module.exports = withMT({
+module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/pages/**/*.{js,ts,jsx,tsx}',
+    './src/components/**/*.{js,ts,jsx,tsx}',
+    './src/app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-    },
+    extend: {},
   },
-  plugins: [],
-});
+  daisyui: {
+    themes: [
+      {
+        mytheme: {    
+          "primary": "#c4b5fd",
+          "secondary": "#7c3aed",       
+          "accent": "#e879f9",     
+          "neutral": "#1F2937",   
+          "base-100": "#FFFFFF",     
+          "info": "#3ABFF8",     
+          "success": "#4ade80",        
+          "warning": "#facc15",     
+          "error": "#e11d48",
+        },
+      },
+    ],
+  },
+  plugins: [require('daisyui')],
+}
