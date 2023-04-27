@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Navigation />
 
-      <div class="hero min-h-screen bg-base-200">
+      <div class="hero min-h-screen ">
   <div class="hero-content flex-col lg:flex-row-reverse">
     <img src="/images/stock/photo-1635805737707-575885ab0820.jpg" class="max-w-sm rounded-lg shadow-2xl" />
     <div>
@@ -30,7 +30,7 @@ export default function Home() {
      <Cards />
      </div>
    
-    <div class="stats shadow justify-center flex mx-5 my-5">
+    <div class="stats shadow justify-center flex mx-5 mt-20 p-4 text-center">
   
   <div class="stat">
     <div class="stat-figure text-secondary">
@@ -64,7 +64,7 @@ export default function Home() {
 
 
 <div id="CTA" >
-<div class="hero min-h-screen bg-base-200">
+<div class="hero min-h-screen ">
   <div class="hero-content text-center">
     <div class="max-w-md">
       <h1 class="text-5xl font-bold">Hello there</h1>
